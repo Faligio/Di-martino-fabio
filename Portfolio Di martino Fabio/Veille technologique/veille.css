@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Tahoma;
+}
+
+.container {
+    margin: 0 280px;
+}
+
+.header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.header h2 {
+    margin-top: 1%;
+    margin-left: -15%;
+    float: left;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.header ul {
+    float: right;
+    margin: 5px 140px;
+    line-height: 2;
+    text-align: center;
+}
+
+#navbar {
+    padding: 1%;
+    position: fixed;
+    top: 0;
+    transition: background-color 0.7s ease;
+    width: 100%;
+}
+
+#navbar a {
+    display: block;
+    float: left;
+    color: inherit;
+    text-decoration: none;
+    padding: 20px;
+    font: 16px Arial;
+}
+
+.main {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    background-color: #8f8d8d17;
+    position: relative;
+}
+
+.main h1,
+.main p {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.main h1 {
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+.about {
+    background-color: white;
+    padding: 10px 20px 30px;
+    overflow: hidden;
+}
+
+.about img {
+    width: 50%;
+    float: left;
+    margin-right: 50px;
+}
+
+.about h2 {
+    text-transform: capitalize;
+    padding-top: 12px;
+}
+
+.about p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.norme {
+    text-align: center;
+    padding: 10px 20px 30px;
+    overflow: hidden;
+    color: #666;
+    line-height: 1.5;
+}
+
+.plans {
+    width: 1050px;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+.plan {
+    float: left;
+    width: 150px;
+    margin: 20px 2px;
+    padding: 15px 25px;
+    text-align: center;
+    background: white;
+    background-clip: padding-box;
+    border: 2px solid #e5ded6;
+    border-color: rgba(black, 0.1);
+    border-radius: 5px;
+}
+
+.plan-title {
+    margin-bottom: 12px;
+    font-size: 24px;
+    color: #36bce6;
+}
+
+.plan-price {
+    margin-bottom: 20px;
+    line-height: 1;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fd935a;
+}
+
+.plan-unit {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #aaa;
+}
+
+.plan-features {
+    width: 120px;
+    margin: 20px auto 15px;
+    padding: 15px 0 0 15px;
+    border-top: 1px solid #e5ded6;
+    text-align: left;
+}
+
+.plan-feature {
+    line-height: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 5px;
+}
+
+.plan-feature-unit {
+    margin-left: 2px;
+    font-size: 16px;
+}
+
+.plan-feature-name {
+    font-size: 13px;
+    font-weight: normal;
+    color: #aaa;
+}
+
+.plan-button {
+    position: relative;
+    display: block;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(black, 0.1);
+    background: #fd935c;
+    border-bottom: 2px solid #cf7e3b;
+    border-color: rgba(black, 0.15);
+    border-radius: 4px;
+}
+
+.skills {
+    height: 300px;
+    background-color: #8f8d8d17;
+}
+
+.skills h3 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #555;
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+.skill .name {
+    display: block;
+    margin-top: 20px;
+    width: 20%;
+    height: 20px;
+    text-align: center;
+    float: left;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skill .skill-bar {
+    display: block;
+    background-color: white;
+    width: 80%;
+    height: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+.skill .skill-bar .skill-bar-fil {
+    display: inline-block;
+    height: 100%;
+    background-color: orangered;
+}
+
+.skill .skill-bar .one {
+    width: 75%;
+}
+
+.skill .skill-bar .two {
+    width: 65%;
+}
+
+.skill .skill-bar .three {
+    width: 30%;
+}
+
+.skill .skill-bar .for {
+    width: 47%;
+}
+
+.skill .skill-bar .five {
+    width: 92%;
+}
+
+.skill .skill-bar .six {
+    width: 65%;
+}
+
+.skill .skill-bar .seven {
+    width: 34%;
+}
+
+.skill .skill-bar .eight {
+    width: 16%;
+}
+
+.skill .skill-bar .nine {
+    width: 55%;
+}
+
+.footer {
+    height: 40px;
+    background-color: rgb(36, 35, 35);
+}
+
+.footer span {
+    display: block;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: white;
+    margin-top: px;
+}
+
+.footer .f-one {
+    float: left;
+}
+
+.footer .f-two {
+    float: right;
+}

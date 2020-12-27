@@ -1,0 +1,211 @@
+/* Slash d'intro */
+
+@font-face {
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/polar.otf");
+    font-family: 'Polar';
+}
+
+html,
+body {
+    font-size: 62.5%;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide.active .slide__overlay,
+.slide.active .slide__text {
+    opacity: 1;
+    transform: translateX(1);
+    z-index: 1;
+}
+
+.slide:nth-child(1) .slide__overlay-path {
+    fill: rgb(219, 219, 219);
+}
+
+.slide__overlay {
+    position: absolute;
+    top: 100%;
+    left: -70%;
+    height: 150%;
+    min-height: 100%;
+    animation-name: slide__overlay;
+    animation-delay: 2s;
+    animation-duration: 0.5s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slide__overlay {
+    100% {
+        top: 0%;
+        left: -15%;
+        opacity: 1;
+    }
+}
+
+@keyframes slide__overlay {
+    100% {
+        left: -15%;
+        top: 0%;
+        opacity: 1;
+    }
+}
+
+.slide__text {
+    position: absolute;
+    width: 25%;
+    top: 120%;
+    left: 3%;
+    color: black;
+    max-width: 1000%;
+    animation-name: slide__text;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    opacity: 0;
+    z-index: 1;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slide__text {
+    100% {
+        top: 30%;
+    }
+}
+
+@keyframes slide__text {
+    100% {
+        top: 30%;
+    }
+}
+
+.slide__text-heading {
+    font-family: "Polar", Helvetica, Arial, sans-serif;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.slide__text-desc {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.slide__text-link {
+    z-index: 5;
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 2.3rem;
+}
+
+.slide__text-link:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: rotateX(-85deg);
+    transform: rotateX(-85deg);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.slide__text-link:hover:before {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(2);
+}
+
+
+/* Background gif */
+
+.bg-image {
+    background-image: url("https://i.ibb.co/VY7BdJK/mairie-de-muret-accueil-slide-allees-niel-99c177ad.jpg");
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ButtonLancement */
+
+.btn {
+    position: absolute;
+    top: 68%;
+    left: 3%;
+    font-family: sans-serif;
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    background-color: #1b8bf9;
+    padding: 20px 50px;
+    border-radius: 5rem;
+    box-shadow: 1px 2.9px 16px rgba(27, 139, 249, 0.4);
+    transition: 0.6s cubic-bezier(0.01, 1.69, 0.99, 0.94);
+    animation-name: btn;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    z-index: 1;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn:hover {
+    box-shadow: 3px 4.9px 16px rgba(151, 181, 226, 0.6);
+    padding: 23px 53px;
+}
+
+.btn--clicked {
+    transition: 0.6s cubic-bezier(0.01, 1.69, 0.99, 0.94);
+    padding: 15px 2px;
+    width: 50px;
+    color: transparent;
+}
+
+.color {
+    display: block;
+    width: 0;
+    height: 0;
+    left: 6%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    transition: 0.8s ease;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.expanded {
+    width: 200%;
+    padding-bottom: 200%;
+    height: auto;
+}
+
+.color--white {
+    background-color: #f9f9f9;
+    transition-delay: 0.25s;
+}

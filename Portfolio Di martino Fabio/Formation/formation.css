@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Tahoma;
+}
+
+.container {
+    margin: 0 280px;
+}
+
+.header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.header h2 {
+    margin-top: 1%;
+    margin-left: -15%;
+    float: left;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.header ul {
+    float: right;
+    margin: 5px 140px;
+    line-height: 2;
+    text-align: center;
+}
+
+#navbar {
+    padding: 1%;
+    position: fixed;
+    top: 0;
+    transition: background-color 0.7s ease;
+    width: 100%;
+}
+
+#navbar a {
+    display: block;
+    float: left;
+    color: inherit;
+    text-decoration: none;
+    padding: 20px;
+    font: 16px Arial;
+}
+
+.main {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    background-color: #8f8d8d17;
+    position: relative;
+}
+
+.main h1,
+.main p {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.main h1 {
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+.about {
+    background-color: white;
+    padding: 10px 20px 30px;
+    overflow: hidden;
+}
+
+.about img {
+    width: 50%;
+    float: left;
+    margin-right: 50px;
+}
+
+.about h2 {
+    text-transform: capitalize;
+    padding-top: 12px;
+}
+
+.about p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.number .one,
+.number .two {
+    width: calc(88.5% / 2);
+    margin-left: 2%;
+    height: 60px;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.numbert h3 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #555;
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+.number .one {
+    background-color: #038459b8;
+}
+
+.number .two {
+    background-color: rgba(36, 153, 231, 0.863);
+}
+
+.number .one span,
+.number .two span,
+.number .three span {
+    font-size: 18px;
+    display: block;
+}
+
+.slam {
+    margin-top: -22%;
+    margin-left: 50%;
+    float: right;
+    padding: 10px 20px 30px;
+    overflow: hidden;
+    color: #666;
+    line-height: 1.5;
+}
+
+.sisr {
+    padding: 10px 20px 30px;
+    overflow: hidden;
+    color: #666;
+    line-height: 1.5;
+}
+
+.ligne_verticale {
+    margin-top: -27%;
+    margin-left: 50%;
+    border-left: 1px solid gray;
+    height: 550px;
+}
+
+.clear {
+    clear: both;
+}
+
+.skills {
+    height: 300px;
+    background-color: #8f8d8d17;
+}
+
+.skills h3 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #555;
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+.skill .name {
+    display: block;
+    margin-top: 20px;
+    width: 20%;
+    height: 20px;
+    text-align: center;
+    float: left;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skill .skill-bar {
+    display: block;
+    background-color: white;
+    width: 80%;
+    height: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+.skill .skill-bar .skill-bar-fil {
+    display: inline-block;
+    height: 100%;
+    background-color: orangered;
+}
+
+.skill .skill-bar .one {
+    width: 75%;
+}
+
+.skill .skill-bar .two {
+    width: 65%;
+}
+
+.skill .skill-bar .three {
+    width: 30%;
+}
+
+.skill .skill-bar .for {
+    width: 47%;
+}
+
+.skill .skill-bar .five {
+    width: 15%;
+}
+
+.footer {
+    height: 40px;
+    background-color: rgb(36, 35, 35);
+}
+
+.footer span {
+    display: block;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: white;
+    margin-top: 15px;
+}
+
+.footer .f-one {
+    float: left;
+}
+
+.footer .f-two {
+    float: right;
+}
